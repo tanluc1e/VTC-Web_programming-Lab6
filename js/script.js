@@ -69,7 +69,79 @@ function bt_submit(){
     }
     if (checkSuccess == true){
         document.getElementById("success").innerHTML = "✅ Thành công<br>";
+
+        var submitList = [];
+        var newFullName = document.getElementById('fullName').value;
+        var newEmail = document.getElementById('email').value;
+        var newPhone = document.getElementById('phone').value;
+        var newGender = document.getElementById('gender').value;
+        var newCountry = document.getElementById('country').value;
+        var newComment = document.getElementById('comment').value;
+
+        submitList.push({
+            Name: newFullName,
+            Email: newEmail,
+            Phone: newPhone,
+            Gender: newGender,
+            Country: newCountry,
+            Comment: newComment,
+        })
+
+        localStorage.setItem("Items", JSON.stringify(submitList)); // store as a string
+        console.log(window.localStorage.getItem('Items'))
+
+        for (var i = 0; i < submitList.length; i++) {
+            
+            let li = document.createElement("li")
+            li.classList.add("submitListItems")
+
+            myUL.appendChild(li)
+
+            let printFullName = document.createElement("p")
+            printFullName.classList.add("printFullName")
+            printFullName.innerHTML = `${"▪ " + submitList[i].Name }`
+            myUL.appendChild(printFullName)
+
+            let printEmail = document.createElement("p")
+            printEmail.classList.add("printEmail")
+            printEmail.innerHTML = `${submitList[i].Email}`
+            myUL.appendChild(printEmail)
+
+            let printPhone = document.createElement("p")
+            printPhone.classList.add("printPhone")
+            printPhone.innerHTML = `${submitList[i].Phone}`
+            myUL.appendChild(printPhone)
+
+            let printGender = document.createElement("p")
+            printGender.classList.add("printGender")
+            printGender.innerHTML = `${submitList[i].Gender}`
+            myUL.appendChild(printGender)
+
+            let printCountry = document.createElement("p")
+            printCountry.classList.add("printCountry")
+            printCountry.innerHTML = `${submitList[i].Country}`
+            myUL.appendChild(printCountry)
+
+            let printComment = document.createElement("p")
+            printComment.classList.add("printComment")
+            printComment.innerHTML = `${submitList[i].Comment}`
+            myUL.appendChild(printComment)
+
+            let div = document.createElement("div")
+            div.classList.add("tools")
+
+            let text = document.createTextNode("X")
+            let btn = document.createElement("button")
+            btn.classList.add("delBtn")
+            btn.setAttribute("onclick", "deleteBtn("+ i +")")
+            btn.appendChild(text)
+            div.appendChild(btn)
+
+            li.appendChild(div)
+        }
     }
+
+    ///////////////////////////////////////////////////////////////////////////////////////////////////////
 }
 
 

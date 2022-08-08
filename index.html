@@ -9,6 +9,7 @@
     
     <link rel="stylesheet" href="./css/main.css">
     <script src="./js/script.js"></script>
+    <script src="./js/script2.js"></script>
     <script src="https://kit.fontawesome.com/e3e15067a0.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -26,14 +27,14 @@
                 <input type="tel" placeholder="Nhập số điện thoại..." id="phone"><br>
                 <label for="">Giới tính:
                     <br>
-                    <input name="gender" type="radio" id="gender" value="Male" checked><span class="gender">Nam</span>
-                    <input name="gender" type="radio" id="gender" value="Female"><span class="gender">Nữ</span>
-                    <input name="gender" type="radio" id="gender" value="Other"><span class="gender">Khác</span>
+                    <input name="gender" type="radio" id="gender" value="Nam" checked><span class="gender">Nam</span>
+                    <input name="gender" type="radio" id="gender" value="Nữ"><span class="gender">Nữ</span>
+                    <input name="gender" type="radio" id="gender" value="Khác"><span class="gender">Khác</span>
                 </label><br>
                 <label for="">Quốc gia:</label><br>
                 <span id="country_error"></span>
                 <select name="country" class="form-control" id="country">
-                    <option value="null" label="Chọn quốc gia của bạn... " selected="selected">Select a country ... </option>
+                    <option value="null" label="Chọn quốc gia của bạn..." selected="selected">Chọn quốc gia của bạn...</option>
                     <optgroup id="country-optgroup-Africa" label="Africa">
                         <option value="DZ" label="Algeria">Algeria</option>
                         <option value="AO" label="Angola">Angola</option>
@@ -305,9 +306,16 @@
             </form>
         </div>
         <div class="print-form">
-            <span id="message"></span>
+            <form action="">
+                <h1 style="color: #A1DBF1;">Danh sách gửi lên</h1>
+                <ul id="myUL" class="submitList">
+                </ul>
+            </form>
         </div>
     </div>
 </body>
 </html>
 
+<script>
+
+</script>
