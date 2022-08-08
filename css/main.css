@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Itim', cursive;
+    font-size: 20px;
+    background-image: url("https://images5.alphacoders.com/847/thumb-1920-847700.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 30%; 
+    text-align: center;
+    line-height: 1.5;
+    border-radius: 10px;
+    bottom: 10%;
+    margin: 3.2% 0 0 5%;
+    padding: 1%;
+}
+label{
+    color: #A1DBF1;
+}
+span{
+    font-size: 13px;
+    font-style: italic;
+    color: #E4F4F3;
+}
+input{
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+select{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+textarea{
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+button{
+    border-radius: 5px;
+}
+.content{
+    display: block;
+    justify-content: space-around;
+}
+
+#btSubmit{
+    padding: 1%;
+    color: white;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+#btReset{
+    padding: 1%;
+    color: white;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+span.gender{
+    color: #E4F4F3;
+    font-size: 1rem;
+}

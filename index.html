@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Bài tập</title>
+    
+    <link rel="stylesheet" href="./css/main.css">
+    <script src="./js/script.js"></script>
+    <script src="https://kit.fontawesome.com/e3e15067a0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="content">
+        <div class="input-form">
+            <form action="">
+                <label for="">Tên đầy đủ:</label><br>
+                <span id="fullName_error"></span>
+                <input type="text" placeholder="Nhập tên đầy đủ..." id="fullName"><br>
+                <label for="">Email:</label><br>
+                <span id="email_error"></span>
+                <input type="email" placeholder="Nhập email của bạn..." id="email"><br>
+                <label for="">Số điện thoại:</label><br>
+                <span id="phone_error"></span>
+                <input type="tel" placeholder="Nhập số điện thoại..." id="phone"><br>
+                <label for="">Giới tính:
+                    <br>
+                    <input name="gender" type="radio" id="gender" value="Male" checked><span class="gender">Nam</span>
+                    <input name="gender" type="radio" id="gender" value="Female"><span class="gender">Nữ</span>
+                    <input name="gender" type="radio" id="gender" value="Other"><span class="gender">Khác</span>
+                </label><br>
+                <label for="">Quốc gia:</label><br>
+                <span id="country_error"></span>
+                <select id="country" name="country" class="form-control">
+                    <option value="null" id="noneCountry" selected>Chọn quốc gia</option>
+                    <option value="Viet Nam" id="Vietnam">Việt Nam</option>
+                    <option value="Thailand" id="Thailand">Thái Lan</option>
+                    <option value="United Kingdom" id="UK">Vương Quốc Anh</option>
+                    <option value="United States" id="US">Hoa Kỳ</option>
+                    <option value="Other_country" id="Other">Khác...</option>
+                </select><br>
+                <label for="">Bình luận:</label><Br>
+                <textarea name="comment_form" id="comment" cols="30" rows="10" style="resize: none;" placeholder="Hãy nhập gì đó..."></textarea><br>
+                <input type="button" name="btSubmit" id="btSubmit" value="Gửi" onclick="bt_submit()">
+                <input type="reset" name="btReset" id="btReset" value="Làm mới" onclick="bt_reset()"><br>
+                <p id="success"></p>
+            </form>
+        </div>
+        <div class="print-form">
+            <span id="message"></span>
+        </div>
+    </div>
+</body>
+</html>
+
