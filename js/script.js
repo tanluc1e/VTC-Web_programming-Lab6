@@ -69,6 +69,8 @@ function bt_submit(){
     }
     if (checkSuccess == true){
         document.getElementById("success").innerHTML = "✅ Thành công<br>";
+        document.getElementById("btScrollUp").style.margin = "3% 0 0 0";
+        document.getElementById("btScrollUp").style.display = "inline-block";
 
         var submitList = [];
         var newFullName = document.getElementById('fullName').value;
@@ -138,7 +140,9 @@ function bt_submit(){
             div.appendChild(btn)
 
             li.appendChild(div)
+
         }
+        
     }
 
     ///////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -153,4 +157,9 @@ function bt_reset(){
     document.getElementById("country").style.border = "";
     document.getElementById("country_error").innerText = "";
     document.getElementById("success").innerText = "";
+}
+
+
+function bt_delete(){
+    location.reload();
 }

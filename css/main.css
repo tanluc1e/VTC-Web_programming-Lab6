@@ -16,7 +16,7 @@ body{
     justify-content: space-around;
     flex-wrap: nowrap;
 }
-.content > div {
+.content .input-form {
     background-color: rgba(0, 0, 0, 0.5);
     width: 30%;
     text-align: center;
@@ -24,6 +24,19 @@ body{
     padding: 1%;
     border-radius: 10px;
     line-height: 1.5;
+}
+.content .print-form {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 30%;
+    text-align: center;
+    margin: 3.2% 0 0 5%;
+    padding: 1%;
+    border-radius: 10px;
+    line-height: 1.5;
+    overflow-y: auto;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 75vh;
 }
 label{
     color: #A1DBF1;
@@ -57,13 +70,46 @@ button{
     color: white;
     background-color: rgba(0, 0, 0, 1);
 }
-
+#btSubmit:hover{
+    padding: 1.2%;
+    color: #A1DBF1;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 1);
+}
 #btReset{
     padding: 1%;
     color: white;
     background-color: rgba(0, 0, 0, 1);
 }
-
+#btReset:hover{
+    padding: 1.2%;
+    color: #A1DBF1;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 1);
+}
+#btDelete{
+    padding: 1%;
+    color: white;
+    background-color: rgba(0, 0, 0, 1);
+}
+#btDelete:hover{
+    padding: 1.2%;
+    color: #A1DBF1;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 1);
+}
+#btScrollUp{
+    display: none;
+    padding: 1%;
+    color: white;
+    background-color: rgba(0, 0, 0, 1);
+}
+#btScrollUp:hover{
+    padding: 1.2%;
+    color: #A1DBF1;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 1);
+}
 span.gender{
     color: #E4F4F3;
     font-size: 1rem;

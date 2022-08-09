@@ -307,15 +307,13 @@
         </div>
         <div class="print-form">
             <form action="">
-                <h1 style="color: #A1DBF1;">Danh sách gửi lên</h1>
+                <h1 id="topPrint" style="color: #A1DBF1;">Danh sách gửi lên</h1>
+                <input type="button" name="btDelete" id="btDelete" value="Xóa tất cả" onclick="bt_delete()">
                 <ul id="myUL" class="submitList">
                 </ul>
+                <input type="button" name="btScrollUp" id="btScrollUp" value="Scroll Up" onclick="document.getElementById('topPrint').scrollIntoView();">
             </form>
         </div>
     </div>
 </body>
 </html>
-
-<script>
-
-</script>
